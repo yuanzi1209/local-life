@@ -30,7 +30,8 @@
     "packNpmManually": false,
     "enableEngineNative": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
+    "checkSiteMap":false
   },
   "compileType": "miniprogram",
   "libVersion": "2.17.0",
