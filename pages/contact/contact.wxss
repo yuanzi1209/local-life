@@ -1,1 +1,12 @@
 /* pages/contact/contact.wxss */
+.box{
+	height: 200rpx;
+	line-height: 200rpx;
+	text-align: center;
+	margin: 15rpx;
+	border: 1rpx solid #efefef;
+	border-radius: 8rpx;
+	text-shadow: 0rpx 0rpx 5rpx #fff;
+	box-shadow: 1rpx 1rpx 6rpx #aaa;
+	color: #333;
+}

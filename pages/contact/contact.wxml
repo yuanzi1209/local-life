@@ -1,2 +1,2 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<view wx:for="{{colorList}}" wx:key="index" style="background-color: rgba({{item}})" class="box">{{item}}</view>
