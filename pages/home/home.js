@@ -5,7 +5,8 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-		swiperList:[]
+		swiperList:[],
+		gridList:[]
 	},
 
 	/**
@@ -13,15 +14,28 @@ Page({
 	 */
 	onLoad: function (options) {
 		this.getSwiperList()
+		this.getGridList()
 	},
 	getSwiperList(){
 		wx.request({
 			url: 'https://www.escook.cn/slides',
 			method:'GET',
 			success:(res)=>{
-				console.log(res);
+				// console.log(res);
 				this.setData({
 					swiperList:res.data
+				})
+			}
+		})
+	},
+	getGridList(){
+		wx.request({
+			url: 'https://www.escook.cn/categories',
+			method:'GET',
+			success:res=>{
+				console.log(res);
+				this.setData({
+					gridList:res.data
 				})
 			}
 		})
